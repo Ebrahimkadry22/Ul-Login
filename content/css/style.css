@@ -1,0 +1,199 @@
+/* import fontgoogle */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* start globel */
+:root {
+    --primary:#997825;
+    --white-color:#ffffff;
+    --black-color-1:#333333;
+    --black-color-2:#111111;
+    --black-color-3:#666666;
+    --graw-color:#66666640;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: var(--black-color-2);
+}
+input {
+    outline: none;
+    width: 100%;
+}
+
+img {
+max-width: 100%;
+}
+
+
+/* End globel */
+
+/* Start login */
+
+.login {
+    display: flex;
+    padding: .4rem;
+    height: 100vh;
+    width: 800px;
+    /* overflow: hidden; */
+}
+.login .image-login , .form-login {
+    width: 50%;
+}
+.image-login {
+    height: 100%;
+    background-image: url(content/asstes/image/1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: .3rem 0 0 .3rem;
+}
+.title-login {
+    position: absolute;
+    left: 40px;
+    top: 12%;
+    width: 80%;
+}
+.title-login h2 , .title-login p {
+    width: 100%;
+    color: var(--white-color);
+    margin-bottom: .5rem;
+}
+.title-login h2 {
+    font-weight: 600;
+}
+.title-login p {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+/* Start form-login */
+
+.form-login div {
+    padding: .7rem;
+}
+.top {
+    text-align: end;
+    font-size: .8rem;
+}
+.top span a {
+    text-decoration:underline;
+}
+.buttons-login {
+    padding-bottom: 0 !important;
+}
+.buttons-login h2 {
+    color: var(--black-color-1);
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+.buttons button {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-radius: 20px;
+    border: .1rem solid var(--black-color-3) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    color: var(--black-color-1);
+}
+.buttons button img {
+    width: 20px;
+}
+.or {
+    text-align: center;
+    color: #666666 ;
+    position: relative;
+    font-size: .8rem;
+
+}
+.or::after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 1px;
+    background:var(--graw-color);
+    top: 50%;
+    left: 20px;
+}
+.or::before {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 1px;
+    background: var(--graw-color);
+    top: 50%;
+    right: 20px;
+}
+.from {
+    padding-top: 0 !important;
+}
+.from label {
+    color: var(--black-color-3);
+    font-size: .8rem;
+}
+.from label input {
+    margin-bottom: .4rem;
+    border: .1rem solid var(--graw-color);
+    padding: .4rem;
+    border-radius: .4rem;
+}
+.passhide {
+    display: flex;
+    justify-content: space-between;
+}
+.forget {
+    text-align: end;
+    font-size: .8rem;
+}
+.forget a {
+    text-decoration: underline;
+    color: var(--black-color-2);
+}
+.sign {
+    padding: .8rem 3rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white-color);
+    cursor: pointer;
+}
+.acount {
+    font-size: .7rem;
+}
+.acount span a {
+    text-decoration: underline;
+}
+/* End form-login */
+
+/* End login */
+/* Start media */
+@media(max-width:768px) {
+    .image-login {
+        display: none;
+    }
+    .form-login {
+        width: 100%;
+    }
+}
+/* End media */
